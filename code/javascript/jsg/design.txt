@@ -1,0 +1,5 @@
+lots of state serverside
+
+most computation happens in shaders
+
+single or multiplayer.-s

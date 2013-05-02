@@ -1,0 +1,6 @@
+varying vec2 v;
+  
+void main(){	
+  gl_FragColor.xy = v;
+  gl_FragColor.zw = vec2( 0.0, 1.0 );
+} 

@@ -1,0 +1,38 @@
+varying vec2 texpos;
+varying vec2 v;
+
+uniform sampler2D tex;
+uniform float bailout; 
+uniform vec2 peturb; 
+ 
+vec3 fractal( vec3 i ){
+  vec3 o;
+  if( dot( i.xy, i.xy ) < bailout ){
+    o.x = ( i.x * i.x - i.y * i.y + v.x + peturb.x );
+    o.y = ( i.x * i.y * 2.0 + v.y + peturb.y );
+    o.z = i.z - 0.0000000000582076609134674072265625;
+  }else{
+    o.xy = i.xy;
+    if( i.z < 0.0 ) 
+      o.z = i.z * -67108864.0;
+    else
+      o.z = i.z;
+  }
+  return o;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+}
+
+vec3 rec2( vec3 i ){ return fractal( fractal( i ) ); }
+vec3 rec4( vec3 i ){ return rec2( rec2( i ) ); }
+vec3 rec8( vec3 i ){ return rec4( rec4( i ) ); }
+vec3 rec16( vec3 i ){ return rec8( rec8( i ) ); }
+vec3 rec32( vec3 i ){ return rec16( rec16( i ) ); }
+
+void main(){	
+  vec4 ans = vec4( 0.0, 0.0, 0.0, 1.0 );
+  vec3 o = texture2D( tex, texpos ).xyz;
+  
+  o = rec32( o );
+
+  ans.xyz = o;
+	gl_FragColor = ans;
+} 

@@ -1,0 +1,5 @@
+make it auto figure to 100 fps
+do inteligent texture swaping for seamless zooming
+
+make 3d
+improve accuracy

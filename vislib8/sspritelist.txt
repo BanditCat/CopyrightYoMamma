@@ -1,0 +1,21 @@
+# This is an archive list file for use with varc.exe 
+# every line must be whitespace only or in the form 
+# {whitespace}"filename"{whitespace}"name in archive"{anything}
+# or
+# #{comment}
+# or
+# >{output filename}
+
+
+"ssprite\frtt.txt" "frtt"
+"ssprite\frttinit.txt" "frttinit"
+"ssprite\fbg.txt" "fbg"
+"ssprite\vsprite.txt" "vsprite"
+"ssprite\vstandard.txt" "vstandard"
+
+#"textures\dirt-diffuse.jpg" "dirtDiffuse"
+"textures\dirt-bump.jpg" "dirtHeight"
+
+>ssprite.vrc
+
+

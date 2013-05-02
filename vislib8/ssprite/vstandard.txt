@@ -1,0 +1,21 @@
+uniform vec4 aspect;
+uniform vec4 window;
+uniform vec2 screen;
+uniform vec4 tiles;
+
+varying vec2 unitv;
+varying vec2 bgpos;
+varying vec2 winpos;
+
+uniform vec3 planeNormal;
+
+const vec2 recenter = vec2( 0.5, 0.5 );
+const vec4 rs = vec4( 0.0, 0.0, 0.0, 1.0 );
+
+void main(){
+  unitv.xy = ( gl_Vertex.xy * recenter + recenter ) * tiles.xy;
+  winpos = gl_Vertex.xy * aspect.xy;
+  bgpos = unitv * ( window.zw  / screen ) + ( window.xy / screen );
+  
+  gl_Position = gl_Vertex;
+}

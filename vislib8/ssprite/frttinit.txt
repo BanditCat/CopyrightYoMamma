@@ -1,0 +1,52 @@
+varying vec2 winpos;
+
+uniform vec4 aspect;
+uniform vec3 rot;
+uniform vec3 pos;
+uniform vec3 spin;
+
+mat4 mrot( mat4 m, vec3 v, float a ){
+  float c = cos( a );
+  float s = sin( a );
+  float t = 1.0 - c;
+  mat4 ma;
+
+  ma[ 0 ][ 0 ] = t * v.x * v.x + c;
+  ma[ 0 ][ 1 ] = t * v.x * v.y + s * v.z;
+  ma[ 0 ][ 2 ] = t * v.x * v.z - s * v.y;
+  ma[ 0 ][ 3 ] = 0.0;
+
+  ma[ 1 ][ 0 ] = t * v.x * v.y - s * v.z;
+  ma[ 1 ][ 1 ] = t * v.y * v.y + c;
+  ma[ 1 ][ 2 ] = t * v.y * v.z + s * v.x;
+  ma[ 1 ][ 3 ] = 0.0;
+
+  ma[ 2 ][ 0 ] = t * v.x * v.z + s * v.y;
+  ma[ 2 ][ 1 ] = t * v.y * v.z - s * v.x;
+  ma[ 2 ][ 2 ] = t * v.z * v.z + c;
+  ma[ 2 ][ 3 ] = 0.0;
+
+  ma[ 3 ][ 0 ] = 0.0;
+  ma[ 3 ][ 1 ] = 0.0;
+  ma[ 3 ][ 2 ] = 0.0;
+  ma[ 3 ][ 3 ] = 1.0;
+  
+  return ma * m;
+}
+
+const vec4 rs = vec4( 0.0, 0.0, 0.0, 1.0 );
+
+void main(){
+  mat4 nm = mat4( 1.0, 0.0, 0.0, 0.0,
+                  0.0, 1.0, 0.0, 0.0,
+                  0.0, 0.0, 1.0, 0.0,
+                  pos.x, pos.y, pos.z, 1.0 );
+  nm = mrot( nm, vec3( 0.0, 0.0, 1.0 ), rot.z + winpos.y * spin.z );
+  nm = mrot( nm, vec3( 1.0, 0.0, 0.0 ), rot.y + winpos.y * spin.y );
+  nm = mrot( nm, vec3( 0.0, 1.0, 0.0 ), rot.x + winpos.x  * spin.x );
+  vec4 r = vec4( winpos.x, winpos.y, -1.0, 1.0 );
+  vec3 rayStart = ( nm * rs ).xyz; 
+  vec3 ray = ( nm * r ).xyz - rayStart; 
+  gl_FragData[ 0 ].xyz = ray;     
+  gl_FragData[ 1 ].xyz = rayStart; 
+} 

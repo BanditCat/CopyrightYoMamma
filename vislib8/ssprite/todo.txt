@@ -1,0 +1,8 @@
+we can do 5 layers with vec4 using one float for fifth layer.
+
+why is texture lod unstable at border of spheres?
+fix texture mapping so spheres dont show floortex
+
+
+why do values 32 and over for rttrat cause wrapping?
+

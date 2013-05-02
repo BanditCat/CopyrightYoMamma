@@ -1,0 +1,23 @@
+varying vec2 texpos;
+varying vec2 bgpos;
+
+const vec2 recenter = vec2( 0.5, 0.5 );
+
+uniform sampler2D tex, pal, bg;
+uniform float palscale, palpos, palsel;
+
+void main()
+{	
+  vec4 ans = vec4( 0.0, 0.0, 0.0, 1.0 );
+
+  float val = texture2D( tex, texpos.xy ).z;
+  
+  if( val > 0.0 ){
+    vec2 palcoord;
+    palcoord.x = 1.0 - ( abs( 0.5 - fract( val * palscale + palpos ) ) * 2.0 );
+    palcoord.y = palsel;
+    ans.xyz = texture2D( pal, palcoord ).xyz;
+  }else
+    ans.xyz = texture2D( bg, bgpos ).xyz;
+  gl_FragColor = ans;
+} 

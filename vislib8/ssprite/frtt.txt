@@ -1,0 +1,34 @@
+varying vec2 rttpos;
+varying vec2 bgpos;
+varying vec2 pixel;
+varying vec2 unitv;
+uniform sampler2D spheres;
+uniform float numspheres;
+uniform float shader;
+uniform vec4 tiles;
+
+
+void main(){
+  vec3 coord;
+  vec4 ans = vec4( 0.0, 0.0, 0.0, 1000.0 );
+  coord.xy = fract( unitv );
+  coord.z = dot( floor( unitv.xy ), tiles.zw );
+  coord = coord * 2.0 - 1.0;
+  for( float i = 0.0; i < numspheres; ++i ){
+    vec4 spr = texture2D( spheres, vec2( i / ( numspheres + 1.0 ), 0.0 ), i );
+    for( float vx = -2.0; vx <= 2.0; vx += 2.0 )
+      for( float vy = -2.0; vy <= 2.0; vy += 2.0 )
+        for( float vz = -2.0; vz <= 2.0; vz += 2.0 ){
+          float nd = abs( distance( spr.xyz + vec3( vx, vy, vz ), coord ) - spr.w );
+          //float nd = abs( distance( spr.xyz, coord ) - spr.w );
+          if( nd < ans.w ){
+            ans.w = nd;
+            ans.xyz = texture2D( spheres, vec2( i / ( numspheres + 1.0 ), 0.99 ), i ).xyz;
+          }
+        }
+  }
+
+    
+  gl_FragData[ 0 ] = ans;     
+}
+

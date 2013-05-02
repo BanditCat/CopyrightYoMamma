@@ -1,0 +1,385 @@
+System Information:
+OS: Windows v6.1
+Vislib version: 8.0a
+OpenGL version: 4.2.12002 Compatibility Profile Context 9.12.0.0
+OpenGL vendor: ATI Technologies Inc.
+OpenGL renderer: ATI Radeon HD 5800 Series
+
+
+OpenGL information:
+GL_POINT_SIZE_MIN: 0
+GL_POINT_SIZE_MAX: 8192
+GL_MAX_TEXTURE_STACK_DEPTH: 10
+GL_MAX_PROJECTION_STACK_DEPTH : 10
+GL_MAX_MODELVIEW_STACK_DEPTH: 32
+GL_MAX_COLOR_MATRIX_STACK_DEPTH: 10
+GL_MAX_LIGHTS: 8
+GL_MAX_CLIP_PLANES: 8
+GL_SUBPIXEL_BITS: 8
+GL_MAX 3D_TEXTURE_SIZE: 8192
+GL_MAX_TEXTURE_SIZE: 16384
+GL_MAX_ARRAY_TEXTURE_LAYERS: 8192
+GL_MAX_TEXTURE_LOD_BIAS: 16
+GL_MAX_CUBE_MAP_TEXTURE_SIZE: 16384
+GL_MAX_TEXTURE_UNITS: 8
+GL_MAX_VERTEX_ATTRIBS: 29
+GL_MAX_VERTEX_UNIFORM_COMPONENTS: 16384
+GL_MAX_VARYING_COMPONENTS: 128
+GL_MAX_COMBINED_TEXTURE_IMAGE_UNITS: 32
+GL_MAX_VERTEX_TEXTURE_IMAGE_UNITS: 16
+GL_MAX_TEXTURE_IMAGE_UNITS: 16
+GL_MAX_TEXTURE_COORDS: 16
+GL_MAX_FRAGMENT_UNIFORM_COMPONENTS: 16384
+GL_AUX_BUFFERS: 4
+GL_MAX_DRAW_BUFFERS: 8
+GL_RGBA_MODE: 1
+GL_INDEX_MODE: 0
+GL_DOUBLEBUFFER: 1
+GL_STEREO: 0
+GL_SAMPLE_BUFFERS: 0
+GL_SAMPLES: 0
+GL_MAX_COLOR_ATTACHMENTS: 8
+GL_MAX_SAMPLES: 8
+GL_RED_BIT: 8
+GL_GREEN_BITS: 8
+GL_BLUE_BITS: 8
+GL_ALPHA_BITS: 8
+GL_INDEX_BITS: 0
+GL_DEPTH_BITS: 24
+GL_STENCIL_BITS: 8
+GL_ACCUM_RED_BITS: 0
+GL_ACCUM_GREEN_BITS: 0
+GL_ACCUM_BLUE_BITS: 0
+
+
+
+OpenGL Extensions:
+GL_AMDX_debug_output GL_AMDX_vertex_shader_tessellator GL_AMD_conservative_depth GL_AMD_debug_output GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_multi_draw_indirect GL_AMD_name_gen_delete GL_AMD_performance_monitor GL_AMD_pinned_memory GL_AMD_query_buffer_object GL_AMD_sample_positions GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_AMD_shader_trace GL_AMD_texture_cube_map_array GL_AMD_texture_texture4 GL_AMD_transform_feedback3_lines_triangles GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_tessellator GL_AMD_vertex_shader_viewport_index GL_ARB_ES2_compatibility GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_color_buffer_float GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_depth_clamp GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_fragment_shader GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_geometry_shader4 GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_imaging GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_occlusion_query2 GL_ARB_pixel_buffer_object GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counters GL_ARB_shader_bit_encoding GL_ARB_shader_image_load_store GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_stencil_export GL_ARB_shader_subroutine GL_ARB_shader_texture_lod GL_ARB_shading_language_100 GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_shadow GL_ARB_shadow_ambient GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_border_clamp GL_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map GL_ARB_texture_cube_map_array GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirrored_repeat GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_snorm GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transpose_matrix GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_buffer_object GL_ARB_vertex_program GL_ARB_vertex_shader GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ARB_window_pos GL_ATI_draw_buffers GL_ATI_envmap_bumpmap GL_ATI_fragment_shader GL_ATI_separate_stencil GL_ATI_texture_compression_3dc GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_ATI_texture_mirror_once GL_EXT_abgr GL_EXT_bgra GL_EXT_bindable_uniform GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_compiled_vertex_array GL_EXT_copy_buffer GL_EXT_copy_texture GL_EXT_direct_state_access GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_geometry_shader4 GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_histogram GL_EXT_multi_draw_arrays GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_packed_pixels GL_EXT_pixel_buffer_object GL_EXT_point_parameters GL_EXT_provoking_vertex GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_specular_color GL_EXT_shader_image_load_store GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_EXT_subtexture GL_EXT_texgen_reflection GL_EXT_texture3D GL_EXT_texture_array GL_EXT_texture_buffer_object GL_EXT_texture_compression_bptc GL_EXT_texture_compression_latc GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_cube_map GL_EXT_texture_edge_clamp GL_EXT_texture_env_add GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_lod GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_sRGB_decode GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_storage GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_texture_mirrored_repeat GL_KTX_buffer_region GL_NV_blend_square GL_NV_conditional_render GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_explicit_multisample GL_NV_float_buffer GL_NV_half_float GL_NV_primitive_restart GL_NV_texgen_reflection GL_NV_texture_barrier GL_SGIS_generate_mipmap GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SUN_multi_draw_arrays GL_WIN_swap_hint WGL_EXT_swap_controlWGL_ARB_extensions_string WGL_ARB_pixel_format WGL_ATI_pixel_format_float WGL_ARB_pixel_format_float WGL_ARB_multisample WGL_EXT_swap_control WGL_EXT_swap_control_tear WGL_ARB_pbuffer WGL_ARB_render_texture WGL_ARB_make_current_read WGL_EXT_extensions_string WGL_ARB_buffer_region WGL_EXT_framebuffer_sRGB WGL_ATI_render_texture_rectangle WGL_EXT_pixel_format_packed_float WGL_I3D_genlock WGL_NV_swap_group WGL_ARB_create_context WGL_AMD_gpu_association WGL_AMDX_gpu_association WGL_ARB_create_context_profile WGL_NV_DX_interop WGL_NV_DX_interop2 WGL_NV_float_buffer
+
+shader type:     Vertex
+Source length:   256
+Two sided:       0
+Point size mode: 0
+
+shader type:     Fragment
+Source length:   549
+
+shader type:     Fragment
+Source length:   1001
+
+Pixel format information for the 26 valid formats:
+
+
+Total number of formats: 109
+
+Format number:    1
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   184
+
+Format number:    4
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   184
+
+Format number:    5
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   248
+
+Format number:    8
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   248
+
+Format number:    9
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    12
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    15
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    18
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    21
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    24
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    27
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    30
+Red bits+shift:   8+16
+Green bits+shift: 8+8
+Blue bits+shift:  8+0
+Alpha bits+shift: 8+24
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    68
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   184
+
+Format number:    71
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    74
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    77
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    80
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   56
+
+Format number:    83
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   248
+
+Format number:    86
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    89
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    92
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    95
+Red bits+shift:   11+0
+Green bits+shift: 11+11
+Blue bits+shift:  10+22
+Alpha bits+shift: 0+0
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      0
+Double buffering: no
+bits per pixel:   120
+
+Format number:    98
+Red bits+shift:   16+32
+Green bits+shift: 16+16
+Blue bits+shift:  16+0
+Alpha bits+shift: 16+48
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   344
+
+Format number:    101
+Red bits+shift:   16+32
+Green bits+shift: 16+16
+Blue bits+shift:  16+0
+Alpha bits+shift: 16+48
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   408
+
+Format number:    104
+Red bits+shift:   32+64
+Green bits+shift: 32+32
+Blue bits+shift:  32+0
+Alpha bits+shift: 32+96
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 0
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   664
+
+Format number:    107
+Red bits+shift:   32+64
+Green bits+shift: 32+32
+Blue bits+shift:  32+0
+Alpha bits+shift: 32+96
+Depth bits:       24
+Stencil bits:     8
+Accumulator bits: 64
+Aux buffers:      4
+Double buffering: no
+bits per pixel:   728

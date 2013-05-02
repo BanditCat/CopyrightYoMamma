@@ -1,0 +1,13 @@
+varying vec2 texpos;
+varying vec2 v;
+
+vec2 recenter = vec2( 0.5, 0.5 );
+
+uniform vec2 aspect;
+
+void main()
+{
+  v = gl_MultiTexCoord0.xy;
+  texpos = ( gl_Vertex.xy * recenter + recenter ) * aspect;
+	gl_Position = gl_Vertex;
+} 

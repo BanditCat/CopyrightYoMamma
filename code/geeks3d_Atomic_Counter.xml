@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<geexlab>
+
+
+<scene name="GLSL_Demo" vsync="FALSE" ref_grid="FALSE" >
+	<window_size width="512" height="512" />
+  <background_color r="0.0" g="1.0" b="0.0" />
+</scene>
+
+
+<camera name="Main_Camera" navigation_mode="FIXED"  znear="1.0" zfar="1000.0" 
+    		mouse_move_speed="0.2" pan_speed="100.0" keyboard_speed="100.0" mouse_wheel_speed="20.0">
+	<position x="0.0" y="0.0" z="250.0" />
+</camera>
+
+
+<material name="test_mat" gpu_program="GLSL_Program01" />
+
+<!--
+<mesh name="plane1" shape_type="PLANE" render="TRUE" lighting="FALSE" texturing="TRUE"
+            back_face_culling="FALSE" >
+	<plane x_size="256.0" z_size="256.0"  />
+	<position x="0.0" y="0.0" z="0.0" />
+	<orientation pitch="90.0" />
+	<attach_material name="test_mat" />
+</mesh>
+-->
+
+<hud name="hud01" material="test_mat" > 
+  <blending_params active="FALSE" src_factor="BLENDING_FACTOR_ZERO" dst_factor="BLENDING_FACTOR_SRC_COLOR" />
+  <size width="256" height="256" />
+  <position x="0" y="0" />
+</hud>	
+
+<gpu_program name="GLSL_Program01" >
+	<raw_data><![CDATA[	 
+[Vertex_Shader]
+void main()
+{	
+	gl_TexCoord[0] = gl_MultiTexCoord0;
+	gl_Position = ftransform();		
+}
+[Pixel_Shader]
+#version 420 compatibility
+layout(binding = 0, offset = 0) uniform atomic_uint ac;
+void main(void)
+{
+	uint counter = atomicCounterIncrement(ac);
+	float r = (gl_TexCoord[0].x/255) / 255.f;
+  gl_FragColor = vec4(r, 0, 0, 1);
+}]]></raw_data>
+
+</gpu_program>
+
+
+	<script name="init_scene_lua" run_mode="INIT" language="LUA" >
+		<raw_data><![CDATA[	
+-- shaderId = HYP_GpuProgram.GetId("GLSL_Program01")
+
+gBkgColorV0 = {r=0.8, g=0.2, b=0.1, a=1.0}
+gBkgColorV1 = {r=0.8, g=0.2, b=0.1, a=1.0}
+gBkgColorV2 = {r=0.1, g=0.3, b=0.7, a=1.0}
+gBkgColorV3 = {r=0.1, g=0.2, b=0.6, a=1.0}
+HYP_Scene.SetBackgroundImageVertexColor(0, gBkgColorV0.r, gBkgColorV0.g, gBkgColorV0.b, gBkgColorV0.a)
+HYP_Scene.SetBackgroundImageVertexColor(1, gBkgColorV1.r, gBkgColorV1.g, gBkgColorV1.b, gBkgColorV1.a)
+HYP_Scene.SetBackgroundImageVertexColor(2, gBkgColorV2.r, gBkgColorV2.g, gBkgColorV2.b, gBkgColorV2.a)
+HYP_Scene.SetBackgroundImageVertexColor(3, gBkgColorV3.r, gBkgColorV3.g, gBkgColorV3.b, gBkgColorV3.a)
+
+ac_buffer = HYP_Renderer.AtomicCounter_CreateBuffer(1);
+
+mesh_id = HYP_Object.GetId("hud01");
+HYP_Object.AtomicCounterSetBufferId(mesh_id, ac_buffer);
+HYP_Renderer.AtomicCounter_SetValue(ac_buffer, 0, 0);
+
+		]]></raw_data>
+	</script> 
+	
+  <script name="update_scene_lua" run_mode="FRAME" language="LUA" >
+		<raw_data><![CDATA[	
+HYP_Renderer.AtomicCounter_SetValue(ac_buffer, 0, 0);
+    
+-- elapsed = HYP_Utils.GetElapsedTimeSeconds()
+-- HYP_GpuProgram.SetUniform_1f(shaderId, "time", elapsed)
+
+HYP_Utils.DrawText(10, 10, 1.0, 1.0, 0.0, "GLSL Atomic Counter")
+		]]></raw_data>
+	</script> 
+
+
+</geexlab>

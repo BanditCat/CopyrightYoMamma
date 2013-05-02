@@ -1,0 +1,11 @@
+﻿  vislib.c
+  surfaces.c
+  shaders.c
+  net.c
+  jpeg.c
+  glfuncs.c
+  geometry.c
+  bzip2.c
+  aes.c
+  Generating Code...
+  vislib8.vcxproj -> C:\Users\Aristotle\Documents\Visual Studio 2010\Projects\vislib8\Debug\vislib8.lib

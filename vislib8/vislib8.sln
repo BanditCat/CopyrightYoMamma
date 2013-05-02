@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vislib8", "vislib8\vislib8.vcxproj", "{23185FBB-87A1-41B4-8AC4-A929FBB3BDFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "varc", "varc\varc.vcxproj", "{98F5B78B-6EC7-4036-9B18-C734F3A17930}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ssprite", "ssprite\ssprite.vcxproj", "{754D3643-9BF6-4647-9478-5F31B2CAE2EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fract", "fract\fract.vcxproj", "{153DDE02-9E62-4BAD-901F-A49A65F65AF9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23185FBB-87A1-41B4-8AC4-A929FBB3BDFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{23185FBB-87A1-41B4-8AC4-A929FBB3BDFD}.Debug|Win32.Build.0 = Debug|Win32
+		{23185FBB-87A1-41B4-8AC4-A929FBB3BDFD}.Release|Win32.ActiveCfg = Release|Win32
+		{23185FBB-87A1-41B4-8AC4-A929FBB3BDFD}.Release|Win32.Build.0 = Release|Win32
+		{98F5B78B-6EC7-4036-9B18-C734F3A17930}.Debug|Win32.ActiveCfg = Debug|Win32
+		{98F5B78B-6EC7-4036-9B18-C734F3A17930}.Debug|Win32.Build.0 = Debug|Win32
+		{98F5B78B-6EC7-4036-9B18-C734F3A17930}.Release|Win32.ActiveCfg = Release|Win32
+		{98F5B78B-6EC7-4036-9B18-C734F3A17930}.Release|Win32.Build.0 = Release|Win32
+		{754D3643-9BF6-4647-9478-5F31B2CAE2EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{754D3643-9BF6-4647-9478-5F31B2CAE2EC}.Debug|Win32.Build.0 = Debug|Win32
+		{754D3643-9BF6-4647-9478-5F31B2CAE2EC}.Release|Win32.ActiveCfg = Release|Win32
+		{754D3643-9BF6-4647-9478-5F31B2CAE2EC}.Release|Win32.Build.0 = Release|Win32
+		{153DDE02-9E62-4BAD-901F-A49A65F65AF9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{153DDE02-9E62-4BAD-901F-A49A65F65AF9}.Debug|Win32.Build.0 = Debug|Win32
+		{153DDE02-9E62-4BAD-901F-A49A65F65AF9}.Release|Win32.ActiveCfg = Release|Win32
+		{153DDE02-9E62-4BAD-901F-A49A65F65AF9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,19 @@
+# This is an archive list file for use with varc.exe 
+# every line must be whitespace only or in the form 
+# {whitespace}"filename"{whitespace}"name in archive"{anything}
+# or
+# #{comment}
+# or
+# >{output filename}
+
+
+"fract\fbg.txt" "fbg"
+"fract\fbgb.txt" "fbgb"
+"fract\ffrac.txt" "ffrac"
+"fract\ffracinit.txt" "ffracinit"
+"fract\vfrac.txt" "vfrac"
+"fract\vstandard.txt" "vstandard"
+
+>fract.vrc
+
+

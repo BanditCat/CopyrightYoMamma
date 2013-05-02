@@ -1,0 +1,45 @@
+#version 150
+
+uniform vec4 tiles;
+uniform sampler3D vtex;
+uniform sampler2D stex;
+uniform vec4 tweak;
+
+varying vec3 ray;
+varying vec3 coord;
+
+const vec2 recenter = vec2( 0.5, 0.5 );
+const vec4 one = vec4( 1.0, 1.0, 1.0, 1.0 );
+
+
+
+vec2 to2d( vec3 c ){
+  vec2 tp;
+  tp.x = mod( floor( c.z * tiles.x * tiles.y ), tiles.x ) / tiles.x;
+  tp.y = floor( c.z * tiles.y ) / tiles.y;
+  return tp + c.xy / tiles.xy;
+}
+  
+
+void main(){	
+  vec4 ans;
+  
+  vec3 pos = coord;
+  vec4 col = vec4( 0.0, 0.0, 0.0, 0.0 );
+  vec3 dir = normalize( ray );
+  float i;
+  for( i = 0.0; i < 64.0; ++i ){
+    //vec4 tv = texture2D( vtex, to2d( pos ) );
+    vec4 tv = texture3D( vtex, pos.xyz );
+    pos = pos + dir * tv.www / tweak.w;
+    if( tv.w < 0.125 * 0.125 )
+      break;
+    if( ( max( vec3( 1.0, 1.0, 0.0 ), pos ) != vec3( 1.0, 1.0, 0.0 ) ) || ( min( pos, vec3( 0.0, 0.0, -1.0 ) ) != vec3( 0.0, 0.0, -1.0 ) ) ){
+      col.xyz = vec3( 0.0, 1.0, 1.0 );
+      break;
+    }
+  }
+  
+  ans = texture3D( vtex, coord.xyz ) * tweak.w * 1000.0;
+  gl_FragColor = vec4( 1.0f ) - texture2D( stex, coord.xy ) - ans;
+} 

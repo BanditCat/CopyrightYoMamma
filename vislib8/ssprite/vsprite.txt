@@ -1,0 +1,28 @@
+uniform vec4 aspect;
+uniform vec4 window;
+uniform vec2 screen;
+uniform vec4 tiles;
+uniform vec4 tweak;
+
+varying vec3 ray;
+varying vec3 coord;
+
+
+
+const vec2 recenter = vec2( 0.5, 0.5 );
+
+void main(){
+  vec3 center, pos;
+  vec3 texspaceNormal, texspaceX, texspaceY;
+  
+  gl_Position = gl_ModelViewProjectionMatrix * gl_Vertex;
+  center = ( gl_ModelViewMatrix * vec4( 0.0, 0.0, 0.0, 1.0 ) ).xyz;
+  pos = ( gl_ModelViewMatrix * gl_Vertex ).xyz;
+  texspaceX = normalize( ( gl_ModelViewMatrix * vec4( 1.0, 0.0, 0.0, 1.0 ) ).xyz - center );
+  texspaceY = normalize( ( gl_ModelViewMatrix * vec4( 0.0, 1.0, 0.0, 1.0 ) ).xyz - center );
+  texspaceNormal = normalize( ( gl_ModelViewMatrix * vec4( 0.0, 0.0, 1.0, 1.0 ) ).xyz - center );
+  ray.x = dot( pos, texspaceX );
+  ray.y = dot( pos, texspaceY );
+  ray.z = dot( pos, texspaceNormal );
+  coord.xyz = gl_MultiTexCoord0.xyz + tweak.xyz * vec3( 0.005, 0.005, 0.005 );
+}

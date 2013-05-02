@@ -1,0 +1,56 @@
+now: refactoring/auditing
+
+ISOLATE WINDOWS CODE!!!!
+
+
+
+
+
+
+inside
+
+
+make it work with traditional pipeline
+
+texturing
+
+bluring using auxbuffers
+
+shadows
+
+
+
+
+new 3d draw funcs
+
+
+make super sprites that store an entire depthmap for wach pixel of a sphere map.
+
+make archives
+
+merge opengl 1.2 line and make graphics engine optinal
+
+audit/refactor net code
+
+
+
+
+
+
+
+
+
+
+differentiate between left/right keys
+
+make archive packer.
+make parser/functions for procedural textures.
+vertex buffers
+
+add text
+
+figure out why 2 component fp buffers bug out driver
+
+multi-threaded
+
+
