@@ -1,0 +1,577 @@
+#define vkl0x0 0
+#define vkl0x1 1
+#define vkl0x2 2
+#define vkl0x3 3
+#define vkl0x4 4
+#define vkl0x5 5
+#define vkl0x6 6
+#define vkl0x7 7
+#define vkl0x8 8
+#define vklBack 8
+#define vkl0x9 9
+#define vklTab 9
+#define vkl0xA 10
+#define vkl0xB 11
+#define vkl0xC 12
+#define vklClear 12
+#define vkl0xD 13
+#define vklReturn 13
+#define vkl0xE 14
+#define vkl0xF 15
+#define vkl0x10 16
+#define vklShift 16
+#define vkl0x11 17
+#define vklControl 17
+#define vkl0x12 18
+#define vklMenu 18
+#define vkl0x13 19
+#define vklPause 19
+#define vkl0x14 20
+#define vkl0x15 21
+#define vkl0x16 22
+#define vkl0x17 23
+#define vkl0x18 24
+#define vkl0x19 25
+#define vkl0x1A 26
+#define vkl0x1B 27
+#define vklEscape 27
+#define vkl0x1C 28
+#define vkl0x1D 29
+#define vkl0x1E 30
+#define vkl0x1F 31
+#define vkl0x20 32
+#define vklSpace 32
+#define vkl0x21 33
+#define vkl0x22 34
+#define vkl0x23 35
+#define vklEnd 35
+#define vkl0x24 36
+#define vklHome 36
+#define vkl0x25 37
+#define vklLeft 37
+#define vkl0x26 38
+#define vklUp 38
+#define vkl0x27 39
+#define vklRight 39
+#define vkl0x28 40
+#define vklDown 40
+#define vkl0x29 41
+#define vklSelect 41
+#define vkl0x2A 42
+#define vklPrint 42
+#define vkl0x2B 43
+#define vkl0x2C 44
+#define vkl0x2D 45
+#define vklInsert 45
+#define vkl0x2E 46
+#define vklDelete 46
+#define vkl0x2F 47
+#define vkl0 48
+#define vkl1 49
+#define vkl2 50
+#define vkl3 51
+#define vkl4 52
+#define vkl5 53
+#define vkl6 54
+#define vkl7 55
+#define vkl8 56
+#define vkl9 57
+#define vkl0x3A 58
+#define vkl0x3B 59
+#define vkl0x3C 60
+#define vkl0x3D 61
+#define vkl0x3E 62
+#define vkl0x3F 63
+#define vkl0x40 64
+#define vklA 65
+#define vklB 66
+#define vklC 67
+#define vklD 68
+#define vklE 69
+#define vklF 70
+#define vklG 71
+#define vklH 72
+#define vklI 73
+#define vklJ 74
+#define vklK 75
+#define vklL 76
+#define vklM 77
+#define vklN 78
+#define vklO 79
+#define vklP 80
+#define vklQ 81
+#define vklR 82
+#define vklS 83
+#define vklT 84
+#define vklU 85
+#define vklV 86
+#define vklW 87
+#define vklX 88
+#define vklY 89
+#define vklZ 90
+#define vkl0x5B 91
+#define vklLsys 91
+#define vkl0x5C 92
+#define vklRsys 92
+#define vkl0x5D 93
+#define vkl0x5E 94
+#define vkl0x5F 95
+#define vkl0x60 96
+#define vklNumpad0 96
+#define vkl0x61 97
+#define vklNumpad1 97
+#define vkl0x62 98
+#define vklNumpad2 98
+#define vkl0x63 99
+#define vklNumpad3 99
+#define vkl0x64 100
+#define vklNumpad4 100
+#define vkl0x65 101
+#define vklNumpad5 101
+#define vkl0x66 102
+#define vklNumpad6 102
+#define vkl0x67 103
+#define vklNumpad7 103
+#define vkl0x68 104
+#define vklNumpad8 104
+#define vkl0x69 105
+#define vklNumpad9 105
+#define vkl0x6A 106
+#define vklMultiply 106
+#define vkl0x6B 107
+#define vklAdd 107
+#define vkl0x6C 108
+#define vkl0x6D 109
+#define vklSubtract 109
+#define vkl0x6E 110
+#define vkl0x6F 111
+#define vklDivide 111
+#define vkl0x70 112
+#define vklF1 112
+#define vkl0x71 113
+#define vklF2 113
+#define vkl0x72 114
+#define vklF3 114
+#define vkl0x73 115
+#define vklF4 115
+#define vkl0x74 116
+#define vklF5 116
+#define vkl0x75 117
+#define vklF6 117
+#define vkl0x76 118
+#define vklF7 118
+#define vkl0x77 119
+#define vklF8 119
+#define vkl0x78 120
+#define vklF9 120
+#define vkl0x79 121
+#define vklF10 121
+#define vkl0x7A 122
+#define vklF11 122
+#define vkl0x7B 123
+#define vklF12 123
+#define vkl0x7C 124
+#define vklF13 124
+#define vkl0x7D 125
+#define vklF14 125
+#define vkl0x7E 126
+#define vklF15 126
+#define vkl0x7F 127
+#define vklF16 127
+#define vkl0x80 128
+#define vklF17 128
+#define vkl0x81 129
+#define vklF18 129
+#define vkl0x82 130
+#define vklF19 130
+#define vkl0x83 131
+#define vklF20 131
+#define vkl0x84 132
+#define vklF21 132
+#define vkl0x85 133
+#define vklF22 133
+#define vkl0x86 134
+#define vklF23 134
+#define vkl0x87 135
+#define vklF24 135
+#define vkl0x88 136
+#define vkl0x89 137
+#define vkl0x8A 138
+#define vkl0x8B 139
+#define vkl0x8C 140
+#define vkl0x8D 141
+#define vkl0x8E 142
+#define vkl0x8F 143
+#define vkl0x90 144
+#define vklNumlock 144
+#define vkl0x91 145
+#define vklScrollock 145
+#define vkl0x92 146
+#define vkl0x93 147
+#define vkl0x94 148
+#define vkl0x95 149
+#define vkl0x96 150
+#define vkl0x97 151
+#define vkl0x98 152
+#define vkl0x99 153
+#define vkl0x9A 154
+#define vkl0x9B 155
+#define vkl0x9C 156
+#define vkl0x9D 157
+#define vkl0x9E 158
+#define vkl0x9F 159
+#define vkl0xA0 160
+#define vkl0xA1 161
+#define vkl0xA2 162
+#define vkl0xA3 163
+#define vkl0xA4 164
+#define vkl0xA5 165
+#define vkl0xA6 166
+#define vkl0xA7 167
+#define vkl0xA8 168
+#define vkl0xA9 169
+#define vkl0xAA 170
+#define vkl0xAB 171
+#define vkl0xAC 172
+#define vkl0xAD 173
+#define vkl0xAE 174
+#define vkl0xAF 175
+#define vkl0xB0 176
+#define vkl0xB1 177
+#define vkl0xB2 178
+#define vkl0xB3 179
+#define vkl0xB4 180
+#define vkl0xB5 181
+#define vkl0xB6 182
+#define vkl0xB7 183
+#define vkl0xB8 184
+#define vkl0xB9 185
+#define vkl0xBA 186
+#define vkl0xBB 187
+#define vkl0xBC 188
+#define vkl0xBD 189
+#define vkl0xBE 190
+#define vkl0xBF 191
+#define vkl0xC0 192
+#define vkl0xC1 193
+#define vkl0xC2 194
+#define vkl0xC3 195
+#define vkl0xC4 196
+#define vkl0xC5 197
+#define vkl0xC6 198
+#define vkl0xC7 199
+#define vkl0xC8 200
+#define vkl0xC9 201
+#define vkl0xCA 202
+#define vkl0xCB 203
+#define vkl0xCC 204
+#define vkl0xCD 205
+#define vkl0xCE 206
+#define vkl0xCF 207
+#define vkl0xD0 208
+#define vkl0xD1 209
+#define vkl0xD2 210
+#define vkl0xD3 211
+#define vkl0xD4 212
+#define vkl0xD5 213
+#define vkl0xD6 214
+#define vkl0xD7 215
+#define vkl0xD8 216
+#define vkl0xD9 217
+#define vkl0xDA 218
+#define vkl0xDB 219
+#define vkl0xDC 220
+#define vkl0xDD 221
+#define vkl0xDE 222
+#define vkl0xDF 223
+#define vkl0xE0 224
+#define vkl0xE1 225
+#define vkl0xE2 226
+#define vkl0xE3 227
+#define vkl0xE4 228
+#define vkl0xE5 229
+#define vkl0xE6 230
+#define vkl0xE7 231
+#define vkl0xE8 232
+#define vkl0xE9 233
+#define vkl0xEA 234
+#define vkl0xEB 235
+#define vkl0xEC 236
+#define vkl0xED 237
+#define vkl0xEE 238
+#define vkl0xEF 239
+#define vkl0xF0 240
+#define vkl0xF1 241
+#define vkl0xF2 242
+#define vkl0xF3 243
+#define vkl0xF4 244
+#define vkl0xF5 245
+#define vkl0xF6 246
+#define vkl0xF7 247
+#define vkl0xF8 248
+#define vkl0xF9 249
+#define vkl0xFA 250
+#define vkl0xFB 251
+#define vkl0xFC 252
+#define vkl0xFD 253
+#define vkl0xFE 254
+#define vkl0xFF 255
+
+
+static byte* vlKeyNames = {
+  "0x0",
+  "0x1",
+  "0x2",
+  "0x3",
+  "0x4",
+  "0x5",
+  "0x6",
+  "0x7",
+  "Back",
+  "Tab",
+  "0xA",
+  "0xB",
+  "Clear",
+  "Return",
+  "0xE",
+  "0xF",
+  "Shift",
+  "Control",
+  "Menu",
+  "Pause",
+  "0x14",
+  "0x15",
+  "0x16",
+  "0x17",
+  "0x18",
+  "0x19",
+  "0x1A",
+  "Escape",
+  "0x1C",
+  "0x1D",
+  "0x1E",
+  "0x1F",
+  "Space",
+  "0x21",
+  "0x22",
+  "End",
+  "Home",
+  "Left",
+  "Up",
+  "Right",
+  "Down",
+  "Select",
+  "Print",
+  "0x2B",
+  "0x2C",
+  "Insert",
+  "Delete",
+  "0x2F",
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "0x3A",
+  "0x3B",
+  "0x3C",
+  "0x3D",
+  "0x3E",
+  "0x3F",
+  "0x40",
+  "A",
+  "B",
+  "C",
+  "D",
+  "E",
+  "F",
+  "G",
+  "H",
+  "I",
+  "J",
+  "K",
+  "L",
+  "M",
+  "N",
+  "O",
+  "P",
+  "Q",
+  "R",
+  "S",
+  "T",
+  "U",
+  "V",
+  "W",
+  "X",
+  "Y",
+  "Z",
+  "Lsys",
+  "Rsys",
+  "0x5D",
+  "0x5E",
+  "0x5F",
+  "Numpad0",
+  "Numpad1",
+  "Numpad2",
+  "Numpad3",
+  "Numpad4",
+  "Numpad5",
+  "Numpad6",
+  "Numpad7",
+  "Numpad8",
+  "Numpad9",
+  "Multiply",
+  "Add",
+  "0x6C",
+  "Subtract",
+  "0x6E",
+  "Divide",
+  "F1",
+  "F2",
+  "F3",
+  "F4",
+  "F5",
+  "F6",
+  "F7",
+  "F8",
+  "F9",
+  "F10",
+  "F11",
+  "F12",
+  "F13",
+  "F14",
+  "F15",
+  "F16",
+  "F17",
+  "F18",
+  "F19",
+  "F20",
+  "F21",
+  "F22",
+  "F23",
+  "F24",
+  "0x88",
+  "0x89",
+  "0x8A",
+  "0x8B",
+  "0x8C",
+  "0x8D",
+  "0x8E",
+  "0x8F",
+  "Numlock",
+  "Scrollock",
+  "0x92",
+  "0x93",
+  "0x94",
+  "0x95",
+  "0x96",
+  "0x97",
+  "0x98",
+  "0x99",
+  "0x9A",
+  "0x9B",
+  "0x9C",
+  "0x9D",
+  "0x9E",
+  "0x9F",
+  "0xA0",
+  "0xA1",
+  "0xA2",
+  "0xA3",
+  "0xA4",
+  "0xA5",
+  "0xA6",
+  "0xA7",
+  "0xA8",
+  "0xA9",
+  "0xAA",
+  "0xAB",
+  "0xAC",
+  "0xAD",
+  "0xAE",
+  "0xAF",
+  "0xB0",
+  "0xB1",
+  "0xB2",
+  "0xB3",
+  "0xB4",
+  "0xB5",
+  "0xB6",
+  "0xB7",
+  "0xB8",
+  "0xB9",
+  "0xBA",
+  "0xBB",
+  "0xBC",
+  "0xBD",
+  "0xBE",
+  "0xBF",
+  "0xC0",
+  "0xC1",
+  "0xC2",
+  "0xC3",
+  "0xC4",
+  "0xC5",
+  "0xC6",
+  "0xC7",
+  "0xC8",
+  "0xC9",
+  "0xCA",
+  "0xCB",
+  "0xCC",
+  "0xCD",
+  "0xCE",
+  "0xCF",
+  "0xD0",
+  "0xD1",
+  "0xD2",
+  "0xD3",
+  "0xD4",
+  "0xD5",
+  "0xD6",
+  "0xD7",
+  "0xD8",
+  "0xD9",
+  "0xDA",
+  "0xDB",
+  "0xDC",
+  "0xDD",
+  "0xDE",
+  "0xDF",
+  "0xE0",
+  "0xE1",
+  "0xE2",
+  "0xE3",
+  "0xE4",
+  "0xE5",
+  "0xE6",
+  "0xE7",
+  "0xE8",
+  "0xE9",
+  "0xEA",
+  "0xEB",
+  "0xEC",
+  "0xED",
+  "0xEE",
+  "0xEF",
+  "0xF0",
+  "0xF1",
+  "0xF2",
+  "0xF3",
+  "0xF4",
+  "0xF5",
+  "0xF6",
+  "0xF7",
+  "0xF8",
+  "0xF9",
+  "0xFA",
+  "0xFB",
+  "0xFC",
+  "0xFD",
+  "0xFE",
+  "0xFF",

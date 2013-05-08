@@ -1,0 +1,1 @@
+print( "\n\nNumber of arguments: " .. ovel.processGlobals.commandLineArgumentCount .. "\n\n" )for i = 0, ovel.processGlobals.commandLineArgumentCount - 1 do  print( "Argument " .. i .. ": " .. ovel.processGlobals[ "commandLineArgument" .. i ] .. "\n" )endprint( "\n\n" .. ovel.recursiveTostring( ovel.getCommandLineArgs() ) )

@@ -1,0 +1,106 @@
+release version crashes if multiple ides run the thread test
+fix maximize
+right-click->close on the taskbar jacks window position, add veryifyer that puts window in default pos if its off-screem
+^^^^
+Just make it unmaximize/restore windows before closing them.
+
+
+WRITE DOCS IN HTML!!! DO INTERACTIVE DOCS LATER!!!
+
+make output not be nowrap
+
+working on:
+make rtf tokenizer so rendering html is instant
+renderXhtml - indent in fontStyle for lists.
+sometimes delete dosnt delete newlines
+ctrl-mousewheel changes text size
+error line numbers off by one
+
+make 
+
+check system info function for correct UTFness
+
+
+make itc mailboxes an arbitrary string.
+
+Release version crashes if 2 ides run the thread test at once.
+
+
+PORT!  isolate OS dependant code into os.c; write c/lua tests
+remember distinction between charpos/bytepos
+
+merge vislib / ovel
+
+
+rotating paste buffer
+
+expat
+
+links/pictures
+
+add abitrary font support
+
+make __type feild of metatables protected
+
+add pictures to text widgets
+
+about option
+
+write networking/sniffer
+
+deal with multithreded rich edit problem (http://support.microsoft.com/kb/957833)
+
+tabs, buttons, combo boxes, sliders, and rebar widgets, and make menus rebarable
+
+better inform/query with more than yes/no
+
+replace recursiveTostring with reflect
+
+create remote thread
+
+use WM_INPUT for mouse/keyboard queries
+
+make threads menu
+
+
+clickable links and popup menus
+
+incremental find feature
+
+why dosnt alt f to get to tthe menu work? (intercepted by handler?)
+
+make threads and processGlobals available as entire tables (maybe windows too?)
+
+document extensions to lua and add them in
+
+make it do things on hover
+
+
+
+
+
+
+
+
+do interactive docs as part of a package system.
+
+make stack traces
+
+
+{
+INTERACTIVE DOCS! ( include lua manual )
+syntax highlighting
+make popup menus;
+}
+
+
+
+
+
+Long term:
+
+nice icons
+make "compiler" by hooking explorer.exe and modifying the executable.
+make file associasations with .lua
+rotating cut-paste buffer
+make left and right modifier keys seperate.

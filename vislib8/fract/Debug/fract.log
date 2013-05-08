@@ -1,2 +1,6 @@
-﻿  main.c
-  fract.vcxproj -> C:\Users\Aristotle\Documents\Visual Studio 2010\Projects\vislib8\Debug\fract.exe
+﻿  The system cannot find the path specified.
+  Could Not Find G:\root\home\Aristotle\cym\vislib8\fract\fract.vrc
+  'varc.exe' is not recognized as an internal or external command,
+  operable program or batch file.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: The command ""G:\root\home\Aristotle\cym\vislib8\fractVarc.bat"
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(103,5): error MSB3073: :VCEnd" exited with code 1.

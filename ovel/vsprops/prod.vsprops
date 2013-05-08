@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="prod"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		UseUnicodeResponseFiles="false"
+		Optimization="3"
+		InlineFunctionExpansion="2"
+		EnableIntrinsicFunctions="true"
+		FavorSizeOrSpeed="1"
+		OmitFramePointers="true"
+		WholeProgramOptimization="true"
+		AdditionalIncludeDirectories="..\zlib;..\vislib3;..\lualib\lua\src;..\expat"
+		PreprocessorDefinitions="PROD;WINDOWS"
+		StringPooling="true"
+		MinimalRebuild="false"
+		ExceptionHandling="0"
+		BasicRuntimeChecks="0"
+		RuntimeLibrary="0"
+		StructMemberAlignment="5"
+		BufferSecurityCheck="false"
+		EnableEnhancedInstructionSet="2"
+		FloatingPointModel="2"
+		DefaultCharIsUnsigned="true"
+		TreatWChar_tAsBuiltInType="false"
+		RuntimeTypeInfo="false"
+		WarningLevel="4"
+		WarnAsError="true"
+		DebugInformationFormat="0"
+		CompileAs="1"
+		DisableSpecificWarnings="4996;4100;4127;4054;4055"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="..\Release"
+		GenerateManifest="false"
+		GenerateDebugInformation="false"
+		GenerateMapFile="false"
+		MapExports="false"
+	/>
+</VisualStudioPropertySheet>

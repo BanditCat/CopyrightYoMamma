@@ -1,0 +1,1 @@
+ovel.ideExec[[mainw.title = "られます。それは私を傷つけません."]]
