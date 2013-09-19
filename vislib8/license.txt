@@ -2,8 +2,7 @@ This software incoperates a   -->*MODIFIED*<-   version of bzip2 distrubuted und
 license marked BZIP2 below, as well some public domain source code.   All other 
 portions of this software are copyright (C) 2002-2010 Jon D. DuBois.  All rights reserved. 
 
-This software is under development and may not be redistributed or used without specific 
-prior written permission.
+yomamma
 
 THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
 OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
